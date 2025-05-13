@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - "Dr\u0113bes"
+  - "iero\u010Di"
+  - "Iero\u010Di"
+  - Belt
+  - Cap
   layers:
   - Default
   - TransparentFX

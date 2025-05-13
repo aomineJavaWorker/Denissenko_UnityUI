@@ -1,27 +1,31 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SkapisScript : MonoBehaviour
 {
+    public Dropdown categoryDropdown;
     public List<GameObject> wardrobeItems;
+
+    // Новый список надетой одежды
+    public List<GameObject> wornItems = new List<GameObject>();
+
     void Start()
     {
+        categoryDropdown.onValueChanged.AddListener(delegate {
+            UpdateWardrobeDisplay(categoryDropdown.options[categoryDropdown.value].text);
+        });
 
-        foreach (GameObject item in wardrobeItems)
-        {
-            item.SetActive(false);
-        }
+        HideAll();
     }
-    public void Skapis(int index)
+
+    public void UpdateWardrobeDisplay(string category)
     {
         HideAll();
 
-        if (index == 0)
+        foreach (GameObject item in wardrobeItems)
         {
-            foreach (GameObject item in wardrobeItems)
+            if (item.CompareTag(category))
             {
                 item.SetActive(true);
             }
@@ -32,7 +36,19 @@ public class SkapisScript : MonoBehaviour
     {
         foreach (GameObject item in wardrobeItems)
         {
+            // Не отключаем надетые вещи!
+            if (wornItems.Contains(item)) continue;
+
             item.SetActive(false);
+        }
+    }
+
+    // Вызывать из DropZone, когда одежда «надета»
+    public void MarkAsWorn(GameObject item)
+    {
+        if (!wornItems.Contains(item))
+        {
+            wornItems.Add(item);
         }
     }
 }
