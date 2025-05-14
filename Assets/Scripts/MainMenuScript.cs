@@ -8,7 +8,7 @@ public class MainMenuScriot : MonoBehaviour
     // Start is called before the first frame update
     public void ChangeSceneSample()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MumbleScene");
     }
 
     public void ChangeSceneMain()

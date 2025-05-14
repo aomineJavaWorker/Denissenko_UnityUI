@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 07a8ed2620391024a80f1e8093ace42f
   - enabled: 1
+    path: Assets/Scenes/MumbleScene.unity
+    guid: 522a6e95f2d9ad0459c0c2693c785f0b
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/old.unity
+    guid: f7b86e28050bb6c4ba14aeb0e90a6eea
   - enabled: 1
     path: Assets/Scenes/BieninScene.unity
     guid: 54c8dfd2ebe1c18438732f0d7efc9d73

@@ -22,9 +22,9 @@ public class SceneSwitcherScript : MonoBehaviour
         if (selectedOption == "Bienin")
         {
             SceneManager.LoadScene("BieninScene");
-        }else if (selectedOption == "Fierin")
+        }else if (selectedOption == "Mumble")
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("MumbleScene");
         }
     }
 
