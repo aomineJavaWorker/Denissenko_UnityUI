@@ -17,6 +17,9 @@ public class ObjectScript : MonoBehaviour
     public GameObject other1;
     public GameObject other2;
     public GameObject other3;
+    public Slider widthSlider;
+    public Slider heightSlider;
+
 
     public string clothingCategory; 
     public GameObject clothingPrefab; 
@@ -103,6 +106,23 @@ public class ObjectScript : MonoBehaviour
         }
     }
 
+    public void ChangeWidth(float newWidth)
+    {
+        if (lastDragged != null)
+        {
+            Vector3 currentScale = lastDragged.transform.localScale;
+            lastDragged.transform.localScale = new Vector3(newWidth, currentScale.y, currentScale.z);
+        }
+    }
+
+    public void ChangeHeight(float newHeight)
+    {
+        if (lastDragged != null)
+        {
+            Vector3 currentScale = lastDragged.transform.localScale;
+            lastDragged.transform.localScale = new Vector3(currentScale.x, newHeight, currentScale.z);
+        }
+    }
 
 
 }
