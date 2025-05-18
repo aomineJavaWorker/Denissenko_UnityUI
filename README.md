@@ -16,11 +16,10 @@ Otrais Unity 2D projekts, apgūstam UI elementu lietošanu
 
 **Sākumā ir galvenā izvēle kurā vajag uzspiest uz ekrānu lai ieslēgt spēli vai uzspiest uz pogu, lai iziet no spēles**
 
-![image](https://github.com/user-attachments/assets/22303044-db23-4d83-96ca-b80f2249935f)
+![image](https://github.com/user-attachments/assets/c3089a19-b8a2-4193-8e3e-fa768ac3e08f)
+
 
 **Uzspiežot uz ekrānu ieslēdzās 2 skats kurā jau var sākt spēlēt**
-
-![image](https://github.com/user-attachments/assets/bf5aea85-1628-4e5f-99ce-565853204160)
 
 **Izvēloties citu personu atvērās trešais un pēdējais skats ar atkšķirīgām drēbēm un cilvēciņu**
 
