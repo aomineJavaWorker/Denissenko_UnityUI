@@ -7685,9 +7685,9 @@ MonoBehaviour:
   textArray:
   - 'Sveiks mani sauc '
   - ' un man ir '
-  inputFieldVards: {fileID: 0}
-  inputFieldVecums: {fileID: 0}
-  textField: {fileID: 0}
+  inputFieldVards: {fileID: 22778735}
+  inputFieldVecums: {fileID: 931384826}
+  textField: {fileID: 916075913}
 --- !u!114 &1573615619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7744,7 +7744,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1573809764}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
