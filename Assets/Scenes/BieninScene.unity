@@ -755,7 +755,15 @@ MonoBehaviour:
     Gacha Life, kura uzreiz piesaista uzman\u012Bbu ar savu izskatu un nosl\u0113pumaino
     uzved\u012Bbu. Vi\u0146\u0161 ir viens no \u012Bpa\u0161ajiem NPC t\u0113liem,
     kurus var sastapt re\u017E\u012Bm\u0101 \"Life Mode\", un izce\u013Cas ar savu
-    mistisko auru, interesanto raksturu un dzi\u013Co pag\u0101tni."
+    mistisko auru, interesanto raksturu un dzi\u013Co pag\u0101tni. Bienin ne tikai
+    izce\u013Cas ar savu \u0101r\u0113jo t\u0113lu \u2014 sudrabainajiem matiem un
+    ledus zilaj\u0101m ac\u012Bm \u2014, bet ar\u012B ar savu kl\u0101tb\u016Btni,
+    kas raisa zin\u0101mu cie\u0146u un intrigu apk\u0101rt\u0113jos. Vi\u0146a dialogs
+    bie\u017Ei satur dzi\u013Cas un simboliskas fr\u0101zes, kas liek sp\u0113l\u0113t\u0101jiem
+    aizdom\u0101ties par vi\u0146a pag\u0101tni un \u012Bsto b\u016Bt\u012Bbu. Da\u017Ei
+    uzskata, ka vi\u0146\u0161 ir k\u0101das senas un aizmirstas pasaules sargs,
+    kam\u0113r citi dom\u0101, ka vi\u0146\u0161 sl\u0113pj tra\u0123isku pieredzi
+    vai zaud\u0113jumu."
 --- !u!222 &64448976
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -778,7 +786,7 @@ GameObject:
   - component: {fileID: 86860744}
   m_Layer: 5
   m_Name: other1
-  m_TagString: Untagged
+  m_TagString: Cap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1397,7 +1405,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1981643037}
   m_Direction: 2
   m_Value: 1.0000024
-  m_Size: 0.48897627
+  m_Size: 0.40667334
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1638,7 +1646,7 @@ GameObject:
   - component: {fileID: 221685482}
   m_Layer: 5
   m_Name: Belt3
-  m_TagString: Untagged
+  m_TagString: "Dr\u0113bes"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2117,7 +2125,7 @@ GameObject:
   - component: {fileID: 342270832}
   m_Layer: 5
   m_Name: sword1
-  m_TagString: Untagged
+  m_TagString: "Dr\u0113bes"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2243,7 +2251,7 @@ GameObject:
   - component: {fileID: 394418396}
   m_Layer: 5
   m_Name: other2
-  m_TagString: Untagged
+  m_TagString: Cap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3427,7 +3435,7 @@ GameObject:
   - component: {fileID: 700325472}
   m_Layer: 5
   m_Name: sword2
-  m_TagString: Untagged
+  m_TagString: "Dr\u0113bes"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4557,7 +4565,7 @@ GameObject:
   - component: {fileID: 904387145}
   m_Layer: 5
   m_Name: Fierin
-  m_TagString: Untagged
+  m_TagString: character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4852,9 +4860,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 53314654}
   m_Direction: 0
   m_MinValue: 0.5
-  m_MaxValue: 8
+  m_MaxValue: 14
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 7
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -5450,7 +5458,7 @@ MonoBehaviour:
   Belt3Pos: {x: 0, y: 0}
   audioSource: {fileID: 0}
   audioClips: []
-  lastDragged: {fileID: 0}
+  lastDragged: {fileID: 904387138}
   rightPlace: 0
   rotationSlider: {fileID: 1976985183}
 --- !u!1 &1179058299
@@ -5795,10 +5803,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 2125809335}
   m_HandleRect: {fileID: 553110559}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 1
   m_MaxValue: 15
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 7.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -6302,7 +6310,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &1382609117
 GameObject:
   m_ObjectHideFlags: 0
@@ -6787,7 +6795,7 @@ GameObject:
   - component: {fileID: 1509571392}
   m_Layer: 5
   m_Name: other3
-  m_TagString: Untagged
+  m_TagString: Cap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7177,8 +7185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 289, y: 346}
-  m_SizeDelta: {x: 242.15, y: 161.43}
+  m_AnchoredPosition: {x: 48, y: 376}
+  m_SizeDelta: {x: 261.5709, y: 137.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559376803
 MonoBehaviour:
@@ -8143,10 +8151,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1290315443}
   m_HandleRect: {fileID: 530596947}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 1
   m_MaxValue: 15
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 7.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -9719,7 +9727,7 @@ GameObject:
   - component: {fileID: 1966554805}
   m_Layer: 5
   m_Name: Belt1
-  m_TagString: Untagged
+  m_TagString: "Dr\u0113bes"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9998,7 +10006,7 @@ GameObject:
   - component: {fileID: 1985327865}
   m_Layer: 5
   m_Name: sword3
-  m_TagString: Untagged
+  m_TagString: "Dr\u0113bes"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10551,7 +10559,7 @@ GameObject:
   - component: {fileID: 2099004286}
   m_Layer: 5
   m_Name: Belt2
-  m_TagString: Untagged
+  m_TagString: "Dr\u0113bes"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

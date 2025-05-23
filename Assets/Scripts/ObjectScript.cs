@@ -111,9 +111,11 @@ public class ObjectScript : MonoBehaviour
         if (lastDragged != null)
         {
             Vector3 currentScale = lastDragged.transform.localScale;
-            lastDragged.transform.localScale = new Vector3(newWidth, currentScale.y, currentScale.z);
+            float sign = Mathf.Sign(currentScale.x); // сохраняем направление
+            lastDragged.transform.localScale = new Vector3(newWidth * sign, currentScale.y, currentScale.z);
         }
     }
+
 
     public void ChangeHeight(float newHeight)
     {
@@ -121,8 +123,30 @@ public class ObjectScript : MonoBehaviour
         {
             Vector3 currentScale = lastDragged.transform.localScale;
             lastDragged.transform.localScale = new Vector3(currentScale.x, newHeight, currentScale.z);
+
         }
     }
+
+    public void SetInitialSliderValueByTag()
+    {
+        if (lastDragged != null && widthSlider != null && heightSlider != null)
+        {
+            Vector3 scale = lastDragged.transform.localScale;
+
+            switch (lastDragged.tag)
+            {
+                case "Drēbes":
+                case "Cap":
+                case "character":
+                    widthSlider.value = Mathf.Abs(scale.x);
+                    heightSlider.value = scale.y;
+                    break;
+            }
+        }
+    }
+
+
+
 
 
 }

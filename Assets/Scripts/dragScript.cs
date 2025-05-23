@@ -66,6 +66,10 @@ public class dragScript : MonoBehaviour, IPointerDownHandler, IDragHandler, IEnd
         {
             Debug.Log("Dragging ended: " + gameObject.name);
             objectScript.lastDragged = eventData.pointerDrag;
+
+            // Вызов установки значения ползунка на основе тега
+            objectScript.SetInitialSliderValueByTag();
+
             canvasGroup.alpha = 1f;
             canvasGroup.blocksRaycasts = true;
 
@@ -79,6 +83,7 @@ public class dragScript : MonoBehaviour, IPointerDownHandler, IDragHandler, IEnd
             }
         }
     }
+
 
 
 
