@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 98033420}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9992009
+  m_Size: 0.99993134
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6194,6 +6194,7 @@ MonoBehaviour:
   lastDragged: {fileID: 1970088077}
   rightPlace: 0
   rotationSlider: {fileID: 1976985183}
+  scaleSlider: {fileID: 1251130869}
 --- !u!1 &1179058299
 GameObject:
   m_ObjectHideFlags: 0
@@ -6709,9 +6710,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 838276995}
   m_Direction: 0
   m_MinValue: 0.5
-  m_MaxValue: 8
+  m_MaxValue: 14
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 7
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -10874,7 +10875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000029200217, y: 0.00001049}
+  m_AnchoredPosition: {x: 0.000579194, y: 0.00001049}
   m_SizeDelta: {x: -7.2723, y: 295.3722}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2135050248

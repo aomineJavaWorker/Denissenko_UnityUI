@@ -47,6 +47,8 @@ public class ObjectScript : MonoBehaviour
     public bool rightPlace = false;
 
     public Slider rotationSlider;
+    
+    public Slider scaleSlider;
 
     void Start()
     {
@@ -60,7 +62,7 @@ public class ObjectScript : MonoBehaviour
 
     public void ChangeSize(float newSize)
     {
-        if (lastDragged != null)
+        if (lastDragged != null && scaleSlider)
         {
             lastDragged.transform.localScale = new Vector3(newSize, newSize, 1);
         }
@@ -129,7 +131,7 @@ public class ObjectScript : MonoBehaviour
 
     public void SetInitialSliderValueByTag()
     {
-        if (lastDragged != null && widthSlider != null && heightSlider != null)
+        if (lastDragged != null && widthSlider != null && heightSlider != null && scaleSlider != null)
         {
             Vector3 scale = lastDragged.transform.localScale;
 
@@ -140,6 +142,7 @@ public class ObjectScript : MonoBehaviour
                 case "character":
                     widthSlider.value = Mathf.Abs(scale.x);
                     heightSlider.value = scale.y;
+                    scaleSlider.value = (Mathf.Abs(scale.x) + scale.y) / 2f;
                     break;
             }
         }

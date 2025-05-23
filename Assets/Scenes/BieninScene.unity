@@ -5461,6 +5461,7 @@ MonoBehaviour:
   lastDragged: {fileID: 904387138}
   rightPlace: 0
   rotationSlider: {fileID: 1976985183}
+  scaleSlider: {fileID: 930502600}
 --- !u!1 &1179058299
 GameObject:
   m_ObjectHideFlags: 0
